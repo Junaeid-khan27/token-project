@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Coder</title>
+    <link rel="shortcut icon" href="assets/images/photo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+    
+  
+
+  <!-- Token Start -->
+  <section id="token" class="token">
+    <div class="container">
+      <h2>Token Status</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="form">
+            <form id="token-form">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="phone" placeholder="Phone" name="phone">
+              </div>
+              <select class="form-select mb-3" name="status" id="status">
+                <option value="active">Active</option>
+                <option value="complete">Complete</option>
+                <option value="cancel">Cancel</option>
+              </select>
+              <button type="submit" id="submit-btn" class="btn btn-primary">Submit</button>
+            </form>
+
+          </div>
+          <h2 class="mt-5">Total Token: <span id="total-token">0</span></h2>
+        </div>
+        <div class="col-lg-6">
+          <!-- Active -->
+          <div class="li-packege">
+            <div class="token-item active">
+              <div class="token-header">
+                <h3 class="mb-0">Active Token</h3>
+                <span id="total-active">3</span>
+              </div>
+              <ul class="token-area" id="active-ul">
+                <li class="empty-error d-block">
+                  <span class="d-block text-center">No Data Found</span>
+                </li>
+              </ul>
+            </div>
+  
+            <!-- Complete -->
+            <div class="token-item complete">
+              <div class="token-header">
+                <h3 class="mb-0">Active Token</h3>
+                <span id="total-complete">3</span>
+              </div>
+              <ul class="token-area" id="complete-ul">
+                <li class="empty-error d-block">
+                  <span class="d-block text-center">No Data Found</span>
+                </li>
+              </ul>
+            </div>
+  
+            <!-- Cancel -->
+            <div class="token-item cancel">
+              <div class="token-header">
+                <h3 class="mb-0">Active Token</h3>
+                <span id="total-cancel">3</span>
+              </div>
+              <ul class="token-area" id="cancel-ul">
+                <li class="empty-error d-block">
+                  <span class="d-block text-center">No Data Found</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Token End -->
+
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
